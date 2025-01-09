@@ -1,6 +1,6 @@
 ---
-title: "A Deeper Look"
-linkTitle: "A Deeper Look"
+title: "Detalhes"
+linkTitle: "Detalhes"
 weight: 2
 description: >
   Selenium é um projeto abrangente para uma gama de ferramentas e bibliotecas que permitem
@@ -10,15 +10,6 @@ aliases: [
 "/pt-br/documentation/overview/a_deeper_look"
 ]
 ---
-
-{{% pageinfo color="warning" %}}
-<p class="lead">
-   <i class="fas fa-language display-4"></i> 
-   Page being translated from 
-   English to Portuguese. Do you speak Portuguese? Help us to translate
-   it by sending us pull requests!
-</p>
-{{% /pageinfo %}}
 
 ### Selenium controla navegadores
 
@@ -65,7 +56,7 @@ A abordagem de design minimalista do Selenium lhe dá a
 versatilidade para ser incluído como um componente em aplicações maiores.
 A infraestrutura circundante fornecida sob o Selenium
 dá a você as ferramentas para montar
-sua [Grid de navegadores]({{< ref "/grid.md" >}})
+sua [Grid de navegadores]({{< ref "grid.md" >}})
 para que os testes possam ser executados em diferentes navegadores e sistemas operacionais
 em uma variedade de máquinas.
 

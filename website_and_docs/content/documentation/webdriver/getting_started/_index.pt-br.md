@@ -4,7 +4,7 @@ linkTitle: "Começando"
 weight: 2
 needsTranslation: true
 description: >
-  If you are new to Selenium, we have a few resources that can help you get up to speed right away.
+  Se você é novo no Selenium, nós temos alguns recursos que podem te ajudar a se atualizar imediatamente.
 aliases: [
 "/documentation/pt-br/getting_started/", 
 "/documentation/pt-br/getting_started/quick/",
@@ -13,15 +13,6 @@ aliases: [
 "/pt-br/documentation/getting_started/"
 ]
 ---
-
-{{% pageinfo color="warning" %}}
-<p class="lead">
-   <i class="fas fa-language display-4"></i> 
-   Page being translated from 
-   English to Portuguese. Do you speak Portuguese? Help us to translate
-   it by sending us pull requests!
-</p>
-{{% /pageinfo %}}
 
 Selenium suporta automação de todos os principais navegadores do mercado
 por meio do uso do _WebDriver_.
@@ -42,22 +33,15 @@ por meio de uma interface voltada para o usuário que permite aos diferentes bac
 serem usados de forma transparente,
 permitindo a automação entre navegadores e plataformas cruzadas.
 
-A configuração do Selenium é bastante diferente da configuração de outras ferramentas comerciais.
-Para usar Selenium em seu projeto de automação, você precisa instalar as
-bibliotecas de linguagem para sua linguagem de escolha. Além disso, você precisará dos
-binários WebDriver para os navegadores que você deseja automatizar e executar testes.
+Selenium setup is quite different from the setup of other commercial tools.
+Before you can start writing Selenium code, you have to 
+install the language bindings libraries for your language of choice, the browser you
+want to use, and the driver for that browser.
 
+***Follow the links below to get up and going with Selenium WebDriver.***
 
-A instalação do Selenium é dividida nas etapas:
-
-1. [Instalando a biblioteca Selenium]({{< ref "install_library.md" >}}) para sua linguagem de programação escolhida.
-2. [Configure o driver para o navegador]({{< ref "install_drivers.md" >}}) para automatizar o navegador (ex. GeckoDriver para Firefox).
-3. (Opcional) Escolha e configure [Selenium Grid]({{< ref "/grid" >}}) se você quiser tornar seus testes escaláveis.
-
-Se você deseja iniciar com ferramenta low-code / gravação e reprodução, por favor veja:
+If you wish to start with a low-code/record and playback tool, please check
 [Selenium IDE](https://selenium.dev/selenium-ide)
 
-After completing the setup, you can run the code snippet shown at the 
-Depois de completar as etapas de configuração, você pode executar o snippet de codigo em
-[starting page](/pt-br/documentation) na documentação. Então siga para seção
-[WebDriver]({{< ref "/webdriver.md" >}}) para aprender mais sobre automação de navegadores com Selenium.
+Once you get things working, if you want to scale up your tests, check out the 
+[Selenium Grid]({{< ref "/documentation/grid" >}}).

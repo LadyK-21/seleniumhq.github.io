@@ -1,47 +1,79 @@
 ---
-title: "Driver Sessions"
-linkTitle: "Drivers"
+title: "ドライバーセッション"
+linkTitle: "ドライバー"
 weight: 3
 ---
 
-Starting and stopping a session is for opening and closing a browser.
+セッションの開始と停止は、ブラウザーを開いたり閉じたりするためのものです。
 
-## Creating Sessions
+## セッションの作成
 
-Creating a new session corresponds with the W3C command for [New session](https://w3c.github.io/webdriver/#new-session)
+新しいセッションの作成は、W3C コマンド [New session](https://w3c.github.io/webdriver/#new-session) に対応しています。
 
-The session is created automatically by initializing a new Driver class object.
+セッションは、新しいDriverクラスオブジェクトを初期化することによって自動的に作成されます。
 
-Each language allows a session to be created with arguments from one of these classes (or equivalent):
+各言語では、次のいずれかのクラス (または同等のもの) の引数を使用してセッションを作成することができます。
 
-* [Options]({{< ref "options.md" >}}) to describe the kind of session you want; default values are used for local, but this is required for remote
-* Some form of [CommandExecutor]({{< ref "executors.md" >}}) (the implementation varies between languages)
-* [Listeners]({{< ref "listeners.md" >}})
+* [オプション]({{< ref "options.md" >}}) 作成を希望するセッションの種類 ; ローカルにはデフォルト値を使用しますが、リモートには必須です。
+* 何らかの形の[HTTP Client configuration]({{< ref "http_client.md" >}})  (実装は言語によって異なります)
+* [リスナー]({{< ref "listeners.md" >}})
 
-### Local Driver
+### ローカルドライバー
 
-The primary unique argument for starting a local driver includes information about starting the required driver service
-on the local machine.
+ローカルドライバーを起動するための主な一意の引数には、ローカルコンピューターで必要なドライバーサービスを起動するための情報が含まれます。
 
-* [Service]({{< ref "service.md" >}}) object applies only to local drivers and provides information about the browser driver
+* [Service]({{< ref "service.md" >}})オブジェクトはローカルドライバーにのみ適用され、ブラウザーのドライバーに関する情報を提供します。
 
-{{< alert-code >}}
-Show Starting Local driver with multiple arguments.
-{{< /alert-code >}}
+{{< tabpane text=true >}}
+{{< tab header="Java" >}}
+{{< gh-codeblock path="examples/java/src/test/java/dev/selenium/drivers/OptionsTest.java#L23" >}}
+{{< /tab >}}
+{{% tab header="Python" %}}
+{{< gh-codeblock path="examples/python/tests/drivers/test_options.py#L9" >}}
+{{% /tab %}}
+{{< tab header="CSharp" >}}
+{{< gh-codeblock path="examples/dotnet/SeleniumDocs/BaseTest.cs#L42" >}}
+{{< /tab >}}
+{{< tab header="Ruby" >}}
+{{< gh-codeblock path="examples/ruby/spec/drivers/options_spec.rb#L14" >}}
+{{< /tab >}}
+{{< tab header="JavaScript" >}}
+{{< gh-codeblock path="examples/javascript/test/drivers/service.spec.js#L32-L36" >}}
+{{< /tab >}}
+{{< tab header="Kotlin" >}}
+{{< badge-code >}}
+{{< /tab >}}
+{{< /tabpane >}}
 
-### Remote Driver
+### リモートドライバー
 
-The primary unique argument for starting a remote driver includes information about where to execute the code.
-Read the details in the [Remote Driver Section]({{< ref "remote_webdriver.md" >}})
+リモートドライバーを起動するための主な一意の引数には、コードを実行する場所に関する情報を含みます。
+詳細は、[リモートドライバー]({{< ref "remote_webdriver.md" >}})をご覧ください。
 
+## セッションの終了
 
-## Quitting Sessions
+セッションの終了に対するW3Cコマンドは、[セッションの削除](https://w3c.github.io/webdriver/#delete-session)です。
 
-Quitting a session corresponds to W3C command for [Deleting a Session](https://w3c.github.io/webdriver/#delete-session).
+重要:  `quit` メソッドは `close` メソッドとは異なり、
+セッションを終了するには常に `quit` を使用することをお勧めします。
 
-Important note: the `quit` method is different from the `close` method, 
-and it is recommended to always use `quit` to end the session
-
-{{< alert-code >}}
-Show quitting a session.
-{{< /alert-code >}}
+{{< tabpane text=true >}}
+{{< tab header="Java" >}}
+{{< gh-codeblock path="examples/java/src/test/java/dev/selenium/getting_started/FirstScript.java#L29" >}}
+{{< /tab >}}
+{{% tab header="Python" %}}
+{{< gh-codeblock path="examples/python/tests/drivers/test_options.py#L11" >}}
+{{% /tab %}}
+{{< tab header="CSharp" >}}
+{{< gh-codeblock path="examples/dotnet/SeleniumDocs/GettingStarted/FirstScript.cs#L28" >}}
+{{< /tab >}}
+{{< tab header="Ruby" >}}
+{{< gh-codeblock path="examples/ruby/spec/drivers/options_spec.rb#L16" >}}
+{{< /tab >}}
+{{< tab header="JavaScript" >}}
+{{< gh-codeblock path="examples/javascript/test/getting_started/firstScript.spec.js#L28" >}}
+{{< /tab >}}
+{{< tab header="Kotlin" >}}
+{{< gh-codeblock path="examples/kotlin/src/test/kotlin/dev/selenium/getting_started/FirstScriptTest.kt#L35" >}}
+{{< /tab >}}
+{{< /tabpane >}}

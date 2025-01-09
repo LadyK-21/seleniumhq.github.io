@@ -63,7 +63,7 @@ Select对象现在将为您提供一系列命令,
 您无法针对禁用的 `<select>` 元素构建 `Select` 对象.
 
 
-{{< tabpane code=false langEqualsHeader=true >}}
+{{< tabpane text=true >}}
 {{< tab header="Java" >}}
 {{< gh-codeblock path="/examples/java/src/test/java/dev/selenium/support/SelectListTest.java#L23-L24" >}}
 {{< /tab >}}
@@ -74,13 +74,13 @@ Select对象现在将为您提供一系列命令,
 {{< gh-codeblock path="/examples/dotnet/SeleniumDocs/Support/SelectListTest.cs#L23-L24" >}}
 {{< /tab >}}
 {{< tab header="Ruby" >}}
-{{< gh-codeblock path="/examples/ruby/spec/support/select_list_spec.rb#L14-L15" >}}
+{{< gh-codeblock path="/examples/ruby/spec/support/select_list_spec.rb#L13-L14" >}}
 {{< /tab >}}
 {{< tab header="JavaScript" >}}
 {{< gh-codeblock path="/examples/javascript/test/select/selectListTest.spec.js#L18-L19" >}}
 {{< /tab >}}
 {{< tab header="Kotlin" >}}
-{{< badge-code >}}
+{{< gh-codeblock path="/examples/kotlin/src/test/kotlin/dev/selenium/support/SelectListTest.kt#L20-L21" >}}
 {{< /tab >}}
 {{< /tabpane >}}
 
@@ -92,7 +92,7 @@ Select对象现在将为您提供一系列命令,
 
 获取 `<select>` 元素中所有选项列表:
 
-{{< tabpane code=false langEqualsHeader=true >}}
+{{< tabpane text=true >}}
 {{< tab header="Java" >}}
 {{< gh-codeblock path="/examples/java/src/test/java/dev/selenium/support/SelectListTest.java#L51" >}}
 {{< /tab >}}
@@ -103,13 +103,13 @@ Select对象现在将为您提供一系列命令,
 {{< gh-codeblock path="/examples/dotnet/SeleniumDocs/Support/SelectListTest.cs#L52" >}}
 {{< /tab >}}
 {{< tab header="Ruby" >}}
-{{< gh-codeblock path="/examples/ruby/spec/support/select_list_spec.rb#L41" >}}
+{{< gh-codeblock path="/examples/ruby/spec/support/select_list_spec.rb#L40" >}}
 {{< /tab >}}
 {{< tab header="JavaScript" >}}
 {{< gh-codeblock path="/examples/javascript/test/select/selectListTest.spec.js#L45" >}}
 {{< /tab >}}
 {{< tab header="Kotlin" >}}
-{{< badge-code >}}
+{{< gh-codeblock path="/examples/kotlin/src/test/kotlin/dev/selenium/support/SelectListTest.kt#L48" >}}
 {{< /tab >}}
 {{< /tabpane >}}
 
@@ -119,7 +119,7 @@ Select对象现在将为您提供一系列命令,
 对于标准选择列表这将只是一个包含一个元素的列表, 
 对于复选列表则表示包含的零个或多个元素.
 
-{{< tabpane code=false langEqualsHeader=true >}}
+{{< tabpane text=true >}}
 {{< tab header="Java" >}}
 {{< gh-codeblock path="/examples/java/src/test/java/dev/selenium/support/SelectListTest.java#L54" >}}
 {{< /tab >}}
@@ -130,13 +130,13 @@ Select对象现在将为您提供一系列命令,
 {{< gh-codeblock path="/examples/dotnet/SeleniumDocs/Support/SelectListTest.cs#L56" >}}
 {{< /tab >}}
 {{< tab header="Ruby" >}}
-{{< gh-codeblock path="/examples/ruby/spec/support/select_list_spec.rb#L44" >}}
+{{< gh-codeblock path="/examples/ruby/spec/support/select_list_spec.rb#L43" >}}
 {{< /tab >}}
 {{< tab header="JavaScript" >}}
 {{< gh-codeblock path="/examples/javascript/test/select/selectListTest.spec.js#L51" >}}
 {{< /tab >}}
 {{< tab header="Kotlin" >}}
-{{< badge-code >}}
+{{< gh-codeblock path="/examples/kotlin/src/test/kotlin/dev/selenium/support/SelectListTest.kt#L51" >}}
 {{< /tab >}}
 {{< /tabpane >}}
 
@@ -150,7 +150,7 @@ Select类提供了三种选择选项的方法.
 
 根据其可见文本选择选项
 
-{{< tabpane code=false langEqualsHeader=true >}}
+{{< tabpane text=true >}}
 {{< tab header="Java" >}}
 {{< gh-codeblock path="/examples/java/src/test/java/dev/selenium/support/SelectListTest.java#L30" >}}
 {{< /tab >}}
@@ -161,13 +161,13 @@ Select类提供了三种选择选项的方法.
 {{< gh-codeblock path="/examples/dotnet/SeleniumDocs/Support/SelectListTest.cs#L30" >}}
 {{< /tab >}}
 {{< tab header="Ruby" >}}
-{{< gh-codeblock path="/examples/ruby/spec/support/select_list_spec.rb#L21" >}}
+{{< gh-codeblock path="/examples/ruby/spec/support/select_list_spec.rb#L20" >}}
 {{< /tab >}}
 {{< tab header="JavaScript" >}}
 {{< gh-codeblock path="/examples/javascript/test/select/selectListTest.spec.js#L25" >}}
 {{< /tab >}}
 {{< tab header="Kotlin" >}}
-{{< badge-code >}}
+{{< gh-codeblock path="/examples/kotlin/src/test/kotlin/dev/selenium/support/SelectListTest.kt#L27" >}}
 {{< /tab >}}
 {{< /tabpane >}}
 
@@ -175,7 +175,7 @@ Select类提供了三种选择选项的方法.
 
 根据其值属性选择选项
 
-{{< tabpane code=false langEqualsHeader=true >}}
+{{< tabpane text=true >}}
 {{< tab header="Java" >}}
 {{< gh-codeblock path="/examples/java/src/test/java/dev/selenium/support/SelectListTest.java#L33" >}}
 {{< /tab >}}
@@ -186,13 +186,13 @@ Select类提供了三种选择选项的方法.
 {{< gh-codeblock path="/examples/dotnet/SeleniumDocs/Support/SelectListTest.cs#L33" >}}
 {{< /tab >}}
 {{< tab header="Ruby" >}}
-{{< gh-codeblock path="/examples/ruby/spec/support/select_list_spec.rb#L24" >}}
+{{< gh-codeblock path="/examples/ruby/spec/support/select_list_spec.rb#L23" >}}
 {{< /tab >}}
 {{< tab header="JavaScript" >}}
 {{< gh-codeblock path="/examples/javascript/test/select/selectListTest.spec.js#L28" >}}
 {{< /tab >}}
 {{< tab header="Kotlin" >}}
-{{< badge-code >}}
+{{< gh-codeblock path="/examples/kotlin/src/test/kotlin/dev/selenium/support/SelectListTest.kt#L30" >}}
 {{< /tab >}}
 {{< /tabpane >}}
 
@@ -200,7 +200,7 @@ Select类提供了三种选择选项的方法.
 
 根据其在列表中的位置选择选项
 
-{{< tabpane code=false langEqualsHeader=true >}}
+{{< tabpane text=true >}}
 {{< tab header="Java" >}}
 {{< gh-codeblock path="/examples/java/src/test/java/dev/selenium/support/SelectListTest.java#L36" >}}
 {{< /tab >}}
@@ -211,13 +211,13 @@ Select类提供了三种选择选项的方法.
 {{< gh-codeblock path="/examples/dotnet/SeleniumDocs/Support/SelectListTest.cs#L36" >}}
 {{< /tab >}}
 {{< tab header="Ruby" >}}
-{{< gh-codeblock path="/examples/ruby/spec/support/select_list_spec.rb#L27" >}}
+{{< gh-codeblock path="/examples/ruby/spec/support/select_list_spec.rb#L26" >}}
 {{< /tab >}}
 {{< tab header="JavaScript" >}}
 {{< gh-codeblock path="/examples/javascript/test/select/selectListTest.spec.js#L31" >}}
 {{< /tab >}}
 {{< tab header="Kotlin" >}}
-{{< badge-code >}}
+{{< gh-codeblock path="/examples/kotlin/src/test/kotlin/dev/selenium/support/SelectListTest.kt#L33" >}}
 {{< /tab >}}
 {{< /tabpane >}}
 
@@ -234,7 +234,7 @@ Select类提供了三种选择选项的方法.
     </select>
 ```
 
-{{< tabpane code=false langEqualsHeader=true >}}
+{{< tabpane text=true >}}
 {{< tab header="Java" >}}
 {{< gh-codeblock path="/examples/java/src/test/java/dev/selenium/support/SelectListTest.java#L77-L79" >}}
 {{< /tab >}}
@@ -245,13 +245,13 @@ Select类提供了三种选择选项的方法.
 {{< gh-codeblock path="/examples/dotnet/SeleniumDocs/Support/SelectListTest.cs#L77" >}}
 {{< /tab >}}
 {{< tab header="Ruby" >}}
-{{< gh-codeblock path="/examples/ruby/spec/support/select_list_spec.rb#L63-L65" >}}
+{{< gh-codeblock path="/examples/ruby/spec/support/select_list_spec.rb#L62-L64" >}}
 {{< /tab >}}
 {{< tab header="JavaScript" >}}
 {{< gh-codeblock path="/examples/javascript/test/select/selectListTest.spec.js#L73-L76" >}}
 {{< /tab >}}
 {{< tab header="Kotlin" >}}
-{{< badge-code >}}
+{{< gh-codeblock path="/examples/kotlin/src/test/kotlin/dev/selenium/support/SelectListTest.kt#L74-L76" >}}
 {{< /tab >}}
 {{< /tabpane >}}
 
@@ -260,7 +260,7 @@ Select类提供了三种选择选项的方法.
 只有复选类型的选择列表才能取消选择选项.
 您可以对要选择的每个元素重复使用这些方法.
 
-{{< tabpane code=false langEqualsHeader=true >}}
+{{< tabpane text=true >}}
 {{< tab header="Java" >}}
 {{< gh-codeblock path="/examples/java/src/test/java/dev/selenium/support/SelectListTest.java#L66" >}}
 {{< /tab >}}
@@ -271,12 +271,12 @@ Select类提供了三种选择选项的方法.
 {{< gh-codeblock path="/examples/dotnet/SeleniumDocs/Support/SelectListTest.cs#L65" >}}
 {{< /tab >}}
 {{< tab header="Ruby" >}}
-{{< gh-codeblock path="/examples/ruby/spec/support/select_list_spec.rb#L53" >}}
+{{< gh-codeblock path="/examples/ruby/spec/support/select_list_spec.rb#L52" >}}
 {{< /tab >}}
 {{< tab header="JavaScript" >}}
 {{< gh-codeblock path="/examples/javascript/test/select/selectListTest.spec.js#L63" >}}
 {{< /tab >}}
 {{< tab header="Kotlin" >}}
-{{< badge-code >}}
+{{< gh-codeblock path="/examples/kotlin/src/test/kotlin/dev/selenium/support/SelectListTest.kt#L63" >}}
 {{< /tab >}}
 {{< /tabpane >}}

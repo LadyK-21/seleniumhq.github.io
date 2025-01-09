@@ -1,37 +1,46 @@
-const { Capabilities } = require('selenium-webdriver');
-const { suite } = require('selenium-webdriver/testing');
+const Chrome = require('selenium-webdriver/chrome');
+const {Browser, Builder} = require("selenium-webdriver");
+const options = new Chrome.Options()
 
-suite(function(env) {
-    describe('Page loading strategies', function() {
-        it('Navigate using eager page loading strategy', async function() {
-            let caps = new Capabilities();
-            caps.setPageLoadStrategy("eager");
-            let driver = await env.builder().withCapabilities(caps).build();
 
-            await driver.get('https://www.google.com');
+describe('Page loading strategies', function () {
+  it('Navigate using eager page loading strategy', async function () {
+    let driver = new Builder()
+      .forBrowser(Browser.CHROME)
+      .setChromeOptions(options.setPageLoadStrategy('eager'))
+      .build();
 
-            driver.quit();
-        });
+    await driver.get('https://www.selenium.dev/selenium/web/blank.html');
+    await driver.quit();
+  });
 
-        it('Navigate using none page loading strategy', async function() {
-            let caps = new Capabilities();
-            caps.setPageLoadStrategy("none");
-            let driver = await env.builder().withCapabilities(caps).build();
+  it('Navigate using none page loading strategy', async function () {
+    let driver = new Builder()
+      .forBrowser(Browser.CHROME)
+      .setChromeOptions(options.setPageLoadStrategy('none'))
+      .build();
 
-            await driver.get('https://www.google.com');
+    await driver.get('https://www.selenium.dev/selenium/web/blank.html');
+    await driver.quit();
+  });
 
-            driver.quit();
-        });
+  it('Navigate using normal page loading strategy', async function () {
+    let driver = new Builder()
+      .forBrowser(Browser.CHROME)
+      .setChromeOptions(options.setPageLoadStrategy('normal'))
+      .build();
 
-        it('Navigate using normal page loading strategy', async function() {
-            let caps = new Capabilities();
-            caps.setPageLoadStrategy("normal");
-            let driver = await env.builder().withCapabilities(caps).build();
+    await driver.get('https://www.selenium.dev/selenium/web/blank.html');
+    await driver.quit();
+  });
 
-            await driver.get('https://www.google.com');
+  it('Should be able to accept certs', async function () {
+    let driver = new Builder()
+      .forBrowser(Browser.CHROME)
+      .setChromeOptions(options.setAcceptInsecureCerts(true))
+      .build();
 
-            driver.quit();
-        });
-
-    });
+    await driver.get('https://www.selenium.dev/selenium/web/blank.html');
+    await driver.quit();
+  });
 });

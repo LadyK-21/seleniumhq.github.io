@@ -1,21 +1,11 @@
 ---
-title: "Overview"
-linkTitle: "Overview"
-weight: 2
+title: "Resumo"
+linkTitle: "Resumo"
+weight: 1
 description: >
-  Is Selenium for you? See an overview of the different project components.
+  Será Selenium a ferramenta para você? Veja um resumo dos componentes do projecto.
 aliases: ["/documentation/pt-br/introduction/"]
 ---
-
-{{% pageinfo color="warning" %}}
-<p class="lead">
-   <i class="fas fa-language display-4"></i> 
-   Page being translated from 
-   English to Portuguese. Do you speak Portuguese? Help us to translate
-   it by sending us pull requests!
-</p>
-{{% /pageinfo %}}
-
 
 Selenium não é só uma ferramenta ou API,
 mas sim uma composição de várias ferramentas.
@@ -23,7 +13,7 @@ mas sim uma composição de várias ferramentas.
 ## WebDriver
 
 Se você está começando com automação de testes de um site de desktop ou site para celular, então
-vai usar as APIs WebDriver. O [WebDriver]({{< ref "/webdriver.md" >}})
+vai usar as APIs WebDriver. O [WebDriver]({{< ref "webdriver.md" >}})
 usa APIs de automação de navegador disponibilizadas por fornecedores de navegador para o controlar e
 executar testes. É como se um usuário real o estivesse operando. Como o
 WebDriver não exige que sua API seja compilada com o código do aplicativo,
@@ -52,4 +42,4 @@ executados pela extremidade remota.
 Após o desenvolvimento dos testes WebDriver, você pode enfrentar
 a necessidade de executar seus testes em vários navegadores e
 combinações de sistemas operacionais.
-É aqui que o [Grid]({{< ref "/grid.md" >}}) entra em cena.
+É aqui que o [Grid]({{< ref "grid.md" >}}) entra em cena.
